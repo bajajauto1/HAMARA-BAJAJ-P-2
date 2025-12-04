@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transport Services</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', sans-serif;
+        background: radial-gradient(circle at top, #1a1f2e, #0d1017 70%);
+        color: #fff;
+        overflow-x: hidden;
+    }
+
+    .container {
+        padding: 25px;
+        max-width: 700px;
+        margin: auto;
+        text-align: center;
+    }
+
+    /* HEADER */
+    h1 {
+        font-size: 26px;
+        font-weight: 700;
+        margin: 10px 0;
+        color: #ffffff;
+        text-shadow: 0 0 10px rgba(255,255,255,0.15);
+    }
+
+    h4 {
+        margin-top: -5px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #cfd3e1;
+    }
+
+    /* GRID */
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 22px;
+        margin-top: 40px;
+    }
+
+    /* CARD STYLE */
+    .card {
+        background: rgba(255,255,255,0.05);
+        border-radius: 20px;
+        padding: 25px 15px;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        border: 1px solid rgba(255,255,255,0.12);
+        text-align: center;
+        cursor: pointer;
+        transition: 0.3s ease;
+        position: relative;
+    }
+
+    .card:hover {
+        transform: translateY(-6px);
+        border-color: #3b82f6;
+        box-shadow: 0 0 25px rgba(59,130,246,0.3);
+    }
+
+    /* ICON */
+    .icon {
+        width: 58px;
+        height: 58px;
+        margin-bottom: 12px;
+        filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));
+    }
+
+    .label {
+        font-size: 15px;
+        font-weight: 600;
+        color: #ffffff;
+        letter-spacing: 0.3px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    /* MOBILE OPTIMIZATION */
+    @media (max-width: 480px) {
+        h1 { font-size: 22px; }
+        .card { padding: 20px 10px; }
+        .icon { width: 50px; height: 50px; }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>BAJAJ AUTO · PLANT-2</h1>
+    <h4>Everything You Need in One Place</h4>
+
+    <div class="grid">
+
+        <!-- TEMPORARY BUS PASS -->
+        <a href="https://bajajauto1.github.io/temporarypassplant-2/" target="_blank">
+            <div class="card">
+                <img class="icon" src="https://img.icons8.com/ios-filled/100/ffffff/bus.png">
+                <div class="label">Temporary Bus Pass</div>
+            </div>
+        </a>
+
+        <!-- BUS PASS DOWNLOAD -->
+        <a href="https://bajajauto1.github.io/BajajAutoOnlinePass/" target="_blank">
+            <div class="card">
+                <img class="icon" src="https://img.icons8.com/ios-filled/100/ffffff/ticket.png">
+                <div class="label">Download Bus Pass</div>
+            </div>
+        </a>
+
+        <!-- TRANSPORT DEPT PORTAL -->
+        <a href="https://bajajauto1.github.io/TransportDepartmentPLANT-2/" target="_blank">
+            <div class="card">
+                <img class="icon" src="https://img.icons8.com/ios-filled/100/ffffff/internet.png">
+                <div class="label">Transport Dept Portal</div>
+            </div>
+        </a>
+
+    </div>
+</div>
+
+</body>
+</html>
