@@ -1,137 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>Transport Services</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bajaj Auto Transport</title>
 
-<!-- Make it full-screen on mobile -->
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#0d1017">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            color: #ffffff !important;   /* FORCE ALL TEXT TO WHITE */
+        }
 
-<style>
-    html, body {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden; /* Force full screen */
-        background: radial-gradient(circle at top, #1a1f2e, #0d1017 70%);
-        font-family: 'Inter', sans-serif;
-        color: #fff;
-    }
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            background: #0d0f14; /* PURE BLACK THEME */
+        }
 
-    .container {
-        padding: 25px;
-        max-width: 700px;
-        margin: auto;
-        text-align: center;
-        height: 100%;
-        overflow-y: auto;     /* allow only vertical scroll */
-        -webkit-overflow-scrolling: touch;
-    }
+        /* ---------------- PAGE WRAPPER ---------------- */
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding: 25px 20px;
+            animation: fadeUp 0.7s ease;
+        }
 
-    h1 {
-        font-size: 26px;
-        font-weight: 700;
-        margin: 10px 0;
-        color: #ffffff;
-        text-shadow: 0 0 10px rgba(255,255,255,0.15);
-    }
+        @keyframes fadeUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
 
-    h4 {
-        margin-top: -5px;
-        font-size: 14px;
-        font-weight: 400;
-        color: #cfd3e1;
-    }
+        /* ---------------- LOGO ---------------- */
+        .logo {
+            width: 90px;
+            display: block;
+            margin: 0 auto 15px auto;
+        }
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-        gap: 22px;
-        margin-top: 40px;
-    }
+        h1 {
+            text-align: center;
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 35px;
+        }
 
-    .card {
-        background: rgba(255,255,255,0.05);
-        border-radius: 20px;
-        padding: 25px 15px;
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px);
-        border: 1px solid rgba(255,255,255,0.12);
-        text-align: center;
-        cursor: pointer;
-        transition: 0.3s ease;
-    }
+        /* ---------------- GRID ---------------- */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 25px;
+        }
 
-    .card:hover {
-        transform: translateY(-6px);
-        border-color: #3b82f6;
-        box-shadow: 0 0 25px rgba(59,130,246,0.3);
-    }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 25px 15px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.08);
+            backdrop-filter: blur(8px);
+            transition: 0.3s;
+        }
 
-    .icon {
-        width: 58px;
-        height: 58px;
-        margin-bottom: 12px;
-        filter: drop-shadow(0 0 5px rgba(255,255,255,0.2));
-    }
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: #4cc9f0;
+            box-shadow: 0 0 15px #4cc8f04a;
+        }
 
-    .label {
-        font-size: 15px;
-        font-weight: 600;
-        color: #ffffff;
-        letter-spacing: 0.3px;
-    }
+        .icon {
+            width: 60px;
+            margin-bottom: 15px;
+            filter: brightness(1);
+        }
 
-    a {
-        text-decoration: none;
-    }
+        .label {
+            font-size: 16px;
+            font-weight: 600;
+        }
 
-    @media (max-width: 480px) {
-        h1 { font-size: 22px; }
-        .card { padding: 20px 10px; }
-        .icon { width: 50px; height: 50px; }
-    }
-</style>
+        a { text-decoration: none; }
+    </style>
 </head>
-
 <body>
 
-<div class="container">
-    <h1>BAJAJ AUTO · PLANT-2</h1>
-    <h4>Everything You Need in One Place</h4>
+    <div class="container">
 
-    <div class="grid">
+        <img class="logo" src="bajaj2nd.png.jfif">
 
-        <a href="https://bajajauto1.github.io/temporarypassplant-2/" target="_blank">
-            <div class="card">
-                <img class="icon" src="https://img.icons8.com/ios-filled/100/ffffff/bus.png">
+        <h1>BAJAJ AUTO TRANSPORT PLANT-2</h1>
+        <h4 style="text-align: center;">EVERYTHING YOU NEED...</h4>
+
+        <div class="grid">
+
+            <!-- TEMP PASS -->
+            <a class="card" href="https://img.icons8.com/ios-filled/100/ffffff/bus.png" target="_blank">
+                <img class="icon" src="https://img.icons8.com/ios-filled/100/ffffff/bus.png" />
                 <div class="label">Temporary Bus Pass</div>
-            </div>
-        </a>
+            </a>
 
-        <a href="https://bajajauto1.github.io/BajajAutoOnlinePass/" target="_blank">
-            <div class="card">
-                <img class="icon" src="https://img.icons8.com/ios-filled/100/ffffff/ticket.png">
-                <div class="label">Download Bus Pass</div>
-            </div>
-        </a>
+            <!-- BUS PASS DOWNLOAD -->
+            <a class="card" href="https://bajajauto1.github.io/BajajAutoOnlinePass/" target="_blank">
+                <img class="icon" src="https://img.icons8.com/ios-filled/100/ffffff/ticket.png" />
+                <div class="label">Bus Pass Download</div>
+            </a>
 
-        <a href="https://bajajauto1.github.io/TransportDepartmentPLANT-2/" target="_blank">
-            <div class="card">
-                <img class="icon" src="https://img.icons8.com/ios-filled/100/ffffff/internet.png">
+            <!-- DEPARTMENT PORTAL -->
+            <a class="card" href="https://bajajauto1.github.io/TransportDepartmentPLANT-2/" target="_blank">
+                <img class="icon" src="https://img.icons8.com/ios-filled/100/ffffff/internet.png" />
                 <div class="label">Transport Dept Portal</div>
-            </div>
-        </a>
+            </a>
 
+        </div>
     </div>
-</div>
 
 </body>
 </html>
